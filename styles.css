@@ -12,8 +12,9 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 10rem;
+  padding: 1rem 10rem 0.4rem 10rem;
   width: 100%;
+  background-color: white;
 }
 
 a {
@@ -86,6 +87,96 @@ ul {
 
 .company:hover .dropdown-menu2 {
   display: block;
+}
+
+section {
+  position: relative;
+}
+
+.content {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.circle {
+  width: 896px;
+  height: 896px;
+  border: 1px solid #bcbded;
+  border-radius: 9999px;
+  position: absolute;
+  transform: translateX(-20%) translateY(-20%);
+  z-index: -1;
+}
+
+.girl-image {
+  height: 594px;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.heading > span {
+  color: var(--simorange);
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.text-buttons {
+  padding-top: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video {
+  border: none;
+  background-color: white;
+  box-shadow: 0 0 25px 0 rgba(151, 151, 151, 0.25);
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}
+
+.play-demo {
+  font-size: 14px;
+  color: var(--simblue);
+  font-weight: 800;
+}
+
+.truck,
+.plane {
+  z-index: 10;
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  box-shadow: 0 0 25px 0 rgba(151, 151, 151, 0.25);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.truck {
+  top: 15rem;
+  right: 0;
+}
+
+.plane {
+  bottom: 0;
+  left: 15rem;
 }
 
 @media (max-width: 575.98px) {
