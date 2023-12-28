@@ -3,9 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Ship up</title>
   </head>
   <body>
-    <header>header</header>
+    <header>
+      <a class="nav-link" href="#"
+        ><span class="ship-text">Ship<span class="up-text">Up</span></span></a
+      >
+      <div class="menu">
+        <ul class="list-unstyled">
+          <li class="company">
+            <a
+              class="nav-link"
+              href="#"
+              role="button"
+              data-bs-toggle="drop down"
+              aria-expanded="false"
+            >
+              Company
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="8"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </a>
+            <ul class="dropdown-menu2">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li>
+                <a href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Solutions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Insights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News And Media</a>
+          </li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <button type="button" class="px-10 py-20 bg-transparent request">
+          request quote
+        </button>
+        <button type="button" class="px-10 py-20 join">join now</button>
+      </div>
+    </header>
   </body>
 </html>

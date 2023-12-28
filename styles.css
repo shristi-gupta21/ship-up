@@ -1,0 +1,182 @@
+:root {
+  --simblue: #2c2d5b;
+  --simorange: #f67366;
+}
+
+body {
+  height: 100svh;
+  width: 100%;
+  font-family: "Lato";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 10rem;
+  width: 100%;
+}
+
+a {
+  color: black;
+}
+
+.ship-text {
+  color: var(--simblue);
+  font-size: 24px;
+}
+
+.up-text {
+  color: var(--simorange);
+  font-weight: 900;
+}
+
+.px-10 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav-link:hover {
+  color: var(--simorange);
+}
+
+ul {
+  font-size: 14px;
+  display: flex;
+}
+
+.buttons {
+  font-size: 14px;
+  display: flex;
+  width: 22%;
+  justify-content: space-between;
+}
+
+.join {
+  background-color: var(--simblue);
+  color: white;
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.request {
+  color: var(--simblue);
+  border-radius: 12px;
+  font-weight: 700;
+  border: 1px solid var(--simblue);
+  text-transform: capitalize;
+}
+
+.menu {
+  width: 70svh;
+  padding: 0.5rem 0;
+}
+
+.dropdown-menu2 {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+}
+
+.company:hover .dropdown-menu2 {
+  display: block;
+}
+
+@media (max-width: 575.98px) {
+  header {
+    padding-left: 0rem;
+  }
+  .menu {
+    display: none;
+  }
+  .join {
+    background-color: var(--simblue);
+    color: white;
+    border-radius: 12px;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  .request {
+    color: var(--simblue);
+    border-radius: 12px;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border: 1px solid var(--simblue);
+    text-transform: capitalize;
+  }
+  .buttons {
+    font-size: 12px;
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header {
+    padding: 0rem 1rem;
+  }
+  .join {
+    background-color: var(--simblue);
+    color: white;
+    border-radius: 12px;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  .request {
+    color: var(--simblue);
+    border-radius: 12px;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border: 1px solid var(--simblue);
+    text-transform: capitalize;
+  }
+  .buttons {
+    font-size: 12px;
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  header {
+    padding: 0rem 1rem;
+  }
+  .join {
+    background-color: var(--simblue);
+    color: white;
+    border-radius: 12px;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  .request {
+    color: var(--simblue);
+    border-radius: 12px;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border: 1px solid var(--simblue);
+    text-transform: capitalize;
+  }
+  .buttons {
+    font-size: 12px;
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+  }
+}
