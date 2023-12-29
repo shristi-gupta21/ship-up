@@ -99,10 +99,21 @@
           >
           <div class="text-buttons">
             <button type="button" class="px-10 py-20 join">join now</button>
-            <button type="button" class="video">
+            <button type="button" class="video play-demo">
               <img src="./images/video.svg" alt="" />
             </button>
             <span class="play-demo">play demo</span>
+          </div>
+          <div id="videoPopup" class="popup">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <iframe
+              id="videoIframe"
+              width="560"
+              height="315"
+              src=""
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
         <img src="./images/hero-image.png" alt="" class="girl-image" />
@@ -170,5 +181,6 @@
         </div>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
