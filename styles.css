@@ -241,6 +241,7 @@ section {
   background-color: #f1f1f1;
   padding: 20px;
   border: 1px solid #ccc;
+  z-index: 2;
 }
 
 .close {
@@ -256,7 +257,8 @@ section {
   width: 100%;
   padding: 50px 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer > .container-footer {
@@ -308,6 +310,61 @@ section {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.footer .line {
+  width: 80%;
+  height: 1.5px;
+  background-color: #e5e5e5;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.footer .ship-footer {
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+}
+.footer .up-footer {
+  color: var(--simorange);
+  font-size: 24px;
+}
+.footer .ng-footer {
+  color: white;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.input-content .origin::before,
+.input-content .destination::before {
+  content: "";
+  background-image: url("./images/location.svg"); /* Replace with your image path or URL */
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 18px;
+  top: 53%;
+  transform: translateY(-50%);
+}
+.input-content .weight::before {
+  content: "";
+  background-image: url("./images/weight.svg"); /* Replace with your image path or URL */
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 18px;
+  top: 53%;
+  transform: translateY(-50%);
+}
+.input-content .origin input::placeholder,
+.input-content .weight input::placeholder,
+.input-content .destination input::placeholder {
+  padding-left: 42px;
+  text-transform: capitalize;
+  font-size: 12px;
 }
 @media screen and (max-width: 576px) {
   header {

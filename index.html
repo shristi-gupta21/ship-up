@@ -99,10 +99,10 @@
           >
           <div class="text-buttons">
             <button type="button" class="px-10 py-20 join">join now</button>
-            <button type="button" class="video play-demo">
+            <button type="button" class="video popup-btn">
               <img src="./images/video.svg" alt="" />
             </button>
-            <span class="play-demo">play demo</span>
+            <span class="play-demo popup-btn">play demo</span>
           </div>
           <div id="videoPopup" class="popup">
             <span class="close" onclick="closePopup()">&times;</span>
@@ -121,17 +121,35 @@
     </section>
     <section class="check-price">
       <div class="input-content">
-        <div>
+        <div class="origin">
           <label class="field-label">origin</label>
-          <input type="text" name="" id="" class="field-input" />
+          <input
+            type="text"
+            placeholder="enter location"
+            name=""
+            id=""
+            class="field-input origin"
+          />
         </div>
-        <div>
+        <div class="destination">
           <label class="field-label">destination</label>
-          <input type="text" name="" id="" class="field-input" />
+          <input
+            type="text"
+            placeholder="enter location"
+            name=""
+            id=""
+            class="field-input"
+          />
         </div>
-        <div>
+        <div class="weight">
           <label class="field-label">weight</label>
-          <input type="text" name="" id="" class="field-input" />
+          <input
+            type="text"
+            name=""
+            placeholder="weight (KG0)"
+            id=""
+            class="field-input"
+          />
         </div>
         <button type="button" class="px-10 py-20 check-price-btn">
           check price
@@ -180,6 +198,11 @@
           </div>
         </div>
       </div>
+      <div class="line"></div>
+      <span
+        ><span class="ship-footer">Ship<span class="up-footer">Up</span></span
+        ><span class="ng-footer">.ng</span></span
+      >
     </footer>
     <script src="./script.js"></script>
   </body>

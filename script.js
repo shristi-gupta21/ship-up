@@ -1,4 +1,4 @@
-document.querySelector(".play-demo").addEventListener("click", function () {
+document.querySelector(".popup-btn").addEventListener("click", function () {
   openPopup("https://www.youtube.com/embed/TnSEND33feY?si=qbeJSMjsMTzQERrW");
 });
 
