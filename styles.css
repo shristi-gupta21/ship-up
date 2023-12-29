@@ -251,8 +251,63 @@ section {
   cursor: pointer;
 }
 
-footer {
+.footer {
   background-color: var(--simblue);
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer > .container-footer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.footer .ship-text-footer {
+  color: var(--simorange);
+  font-size: 24px;
+}
+
+.footer .up-text-footer {
+  color: white;
+  font-weight: 900;
+}
+
+.footer .intro-text {
+  padding-top: 20px;
+}
+.footer .explore,
+.footer .legal,
+.footer .social-media {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.footer .ship-text-heading {
+  width: 20%;
+}
+.footer .icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer .icons .icon {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 @media screen and (max-width: 576px) {
   header {
@@ -260,7 +315,6 @@ footer {
     padding: 0px;
     width: fit-content;
   }
-
   .buttons {
     padding-top: 0.25rem;
   }
@@ -337,6 +391,9 @@ footer {
   .check-price {
     padding: 50px 0px;
   }
+  .footer .ship-text-heading {
+    width: 50%;
+  }
 }
 
 @media (min-width: 567px) and (max-width: 50em) {
@@ -410,6 +467,9 @@ footer {
   }
   .check-price {
     padding: 60px 0px;
+  }
+  .footer .ship-text-heading {
+    width: 50%;
   }
 }
 
