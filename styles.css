@@ -1,6 +1,7 @@
 :root {
   --simblue: #2c2d5b;
   --simorange: #f67366;
+  --gray: #979797;
 }
 
 body {
@@ -53,13 +54,24 @@ ul {
 .buttons {
   font-size: 14px;
   display: flex;
-  width: 22%;
+  width: 30%;
   justify-content: space-between;
+  flex-shrink: 0;
 }
 
 .join {
   background-color: var(--simblue);
   color: white;
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.check-price-btn {
+  background-color: var(--simblue);
+  color: white;
+  padding: 0 88px;
   border-radius: 12px;
   border: none;
   font-weight: 700;
@@ -107,7 +119,7 @@ section {
   border: 1px solid #bcbded;
   border-radius: 9999px;
   position: absolute;
-  transform: translateX(-20%) translateY(-20%);
+  transform: translateX(-32%) translateY(-25%);
   z-index: -1;
 }
 
@@ -134,7 +146,7 @@ section {
 
 .text-buttons {
   padding-top: 50px;
-  width: 50%;
+  width: 55%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,6 +165,7 @@ section {
   font-size: 14px;
   color: var(--simblue);
   font-weight: 800;
+  text-transform: capitalize;
 }
 
 .truck,
@@ -175,13 +188,160 @@ section {
 }
 
 .plane {
-  bottom: 0;
-  left: 15rem;
+  bottom: -1rem;
+  left: 20rem;
 }
 
-@media (max-width: 575.98px) {
+.check-price {
+  padding: 100px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-content > div {
+  position: relative;
+}
+.input-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+  padding: 36px;
+  box-shadow: 0 0 25px 0 rgba(151, 151, 151, 0.25);
+  border-radius: 12px;
+  width: 80%;
+}
+.field-label {
+  z-index: 1;
+  position: absolute;
+  left: 12px;
+  font-size: 14px;
+  transform: translateY(-12px);
+  background-color: white;
+  padding: 8px;
+  top: -8px;
+  color: var(--gray);
+  height: fit-content;
+  text-transform: capitalize;
+}
+
+.field-input {
+  border-radius: 12px;
+  height: 64px;
+  border: 1px solid var(--gray);
+  width: 250px;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--simblue);
+}
+@media screen and (max-width: 576px) {
   header {
-    padding-left: 0rem;
+    margin: 0rem 1rem;
+    padding: 0px;
+    width: fit-content;
+  }
+
+  .buttons {
+    padding-top: 0.25rem;
+  }
+  .join {
+    background-color: var(--simblue);
+    color: white;
+    border-radius: 12px;
+    border: none;
+    padding: 0.5rem 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .request {
+    color: var(--simblue);
+    border-radius: 12px;
+    font-weight: 700;
+    padding: 0.5rem 2rem;
+    border: 1px solid var(--simblue);
+    text-transform: capitalize;
+  }
+  .menu {
+    display: none;
+  }
+  .buttons {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .girl-image {
+    height: 200px;
+  }
+  .content {
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  .circle {
+    width: 300px;
+    height: 300px;
+  }
+  .heading {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .text-content {
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .heading > span {
+    color: var(--simorange);
+    font-weight: 700;
+    font-size: 34px;
+  }
+  .text-buttons {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .input-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .check-price-btn {
+    padding: 20px 88px;
+  }
+  .check-price {
+    padding: 50px 0px;
+  }
+}
+
+@media (min-width: 567px) and (max-width: 50em) {
+  header {
+    padding: 0rem 1rem;
   }
   .menu {
     display: none;
@@ -207,12 +367,53 @@ section {
   .buttons {
     font-size: 12px;
     display: flex;
-    width: 10%;
     justify-content: space-between;
+  }
+
+  .girl-image {
+    height: 290px;
+  }
+
+  .circle {
+    width: 600px;
+    height: 600px;
+  }
+
+  .text-buttons {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .content {
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  .input-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .check-price-btn {
+    padding: 24px 88px;
+  }
+  .text-content {
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .check-price {
+    padding: 60px 0px;
   }
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 767px) and (max-width: 1400px) {
   header {
     padding: 0rem 1rem;
   }
@@ -237,37 +438,31 @@ section {
   .buttons {
     font-size: 12px;
     display: flex;
-    width: 10%;
     justify-content: space-between;
   }
-}
 
-@media (max-width: 1399.98px) {
-  header {
-    padding: 0rem 1rem;
+  .girl-image {
+    height: 434px;
   }
-  .join {
-    background-color: var(--simblue);
-    color: white;
-    border-radius: 12px;
-    border: none;
-    padding: 1rem 2rem;
-    font-weight: 700;
-    text-transform: capitalize;
-  }
-
-  .request {
-    color: var(--simblue);
-    border-radius: 12px;
-    font-weight: 700;
-    padding: 1rem 2rem;
-    border: 1px solid var(--simblue);
-    text-transform: capitalize;
-  }
-  .buttons {
-    font-size: 12px;
+  .content {
+    width: 95%;
     display: flex;
-    width: 10%;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  .input-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .check-price-btn {
+    padding: 28px 88px;
+  }
+  .check-price {
+    padding: 80px 0px;
   }
 }
